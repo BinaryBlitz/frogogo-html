@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 970px; } }
+
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 750px; } }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: auto;
+    padding: 0 15px; } }
