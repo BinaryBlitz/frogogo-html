@@ -85,7 +85,8 @@ a img {
   align-items: center;
   letter-spacing: 2px;
   color: #17286f;
-  margin-right: 3rem; }
+  margin-right: 3rem;
+  cursor: pointer; }
   .location i {
     margin-right: 1rem;
     color: #4ad9bd;
@@ -672,3 +673,106 @@ a img {
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 1rem; }
+
+#location-modal {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #fff; }
+
+.location-container {
+  width: 860px;
+  margin: 0 auto; }
+
+.location-modal .head {
+  height: auto;
+  padding: 7.5rem 0 3.75rem;
+  justify-content: flex-start; }
+
+.location-cities {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #d8d8d8; }
+  .location-cities ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .location-cities ul li {
+      width: 33.33%;
+      margin-bottom: 2rem; }
+  .location-cities label {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .location-cities label.checked .city {
+      color: #4ad9bd; }
+    .location-cities label .city {
+      color: #c6cdd7;
+      letter-spacing: .6px;
+      font-size: 1.25rem;
+      transition: 300ms; }
+
+.location-manually {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem; }
+  .location-manually-text {
+    padding: 3rem 0 2.5rem;
+    color: #17286f;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .location-manually .input {
+    max-width: 420px;
+    margin-bottom: 0;
+    display: block;
+    width: 100%; }
+
+.modal {
+  display: none; }
+
+.fancybox-close-small {
+  right: 3rem;
+  top: 3rem; }
+  .fancybox-close-small:hover:after {
+    background: none; }
+  .fancybox-close-small:after {
+    transition: 300ms;
+    font-size: 50px; }
+
+.radio {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin-right: 1rem; }
+  .radio span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c6cdd7;
+    border-radius: 50%;
+    z-index: 3;
+    transition: 300ms; }
+    .radio span:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+      border: 5px solid #4ad9bd;
+      opacity: 0;
+      transition: 300ms; }
+  .radio input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 5; }
+    .radio input:checked + span {
+      background: #fff; }
+      .radio input:checked + span:after {
+        opacity: 1; }

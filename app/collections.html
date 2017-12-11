@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -27,10 +28,10 @@
 
       <div class="header">
         <div class="header-info">
-          <div class="location">
+          <a href="#location-modal" data-fancybox class="location">
             <i class="fa fa-map-marker"></i>
             <div class="location-city">Москва</div>
-          </div>
+          </a>
           <form action="" class="search">
             <i class="fa fa-search"></i>
             <input type="text" placeholder="ПОИСК">
@@ -409,12 +410,169 @@
     </div>
   </div>
 
+  <!-- Location modal -->
+
+  <div id="location-modal" class="modal">
+    <div class="location-container">
+      <form action="" class="location-modal">
+        <div class="head">Выберите свой город</div>
+        <div class="location-cities">
+          <ul>
+            <li> 
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city" checked="checked">
+                  <span></span>
+                </div>
+                <span class="city">Москва</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Волгоград</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Воронеж</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Екатеринбург</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Казань</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Краснодар</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Красноярск</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city"> Нижний Новгород</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Новосибирск</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Пермь</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Ростов-на-Дону</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Самара</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Санкт-Петербург</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Уфа</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <div class="radio">
+                  <input type="radio" name="loc-city">
+                  <span></span>
+                </div>
+                <span class="city">Челябинск</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="location-manually-text">Или укажите в поле свой</div>
+        <div class="location-manually">
+          <div class="input">
+            <input type="text" placeholder="Введите город">
+          </div>
+          <button class="btn">сохранить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.plugin.min.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
 <script src="js/jquery.countdown-ru.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
   
 </body>

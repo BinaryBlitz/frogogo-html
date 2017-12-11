@@ -20,6 +20,28 @@ $(document).ready(function() {
  		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
  		speed: 200
  	});
+
+ 	// Location checked handle
+
+	$('.location-cities .radio input').each(function() {
+ 		if($(this).attr('checked') == 'checked') {
+ 			$(this).closest('label').addClass('checked');
+ 		} else {
+ 			$(this).closest('label').removeClass('checked');
+ 		}
+ 	});
+
+
+ 	$('.location-cities label').click(function() {
+ 		$('.location-cities label').removeClass('checked');
+ 		$(this).addClass('checked');
+ 	});
+
+ 	// Fancybox init
+
+ 	$('[data-fancybox]').fancybox({
+ 		
+ 	});
  
   
 });
