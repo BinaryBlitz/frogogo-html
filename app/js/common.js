@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   $('.burger-wrap a').click(function(){
     $(this).toggleClass('active');
-    $('.nav--ul').toggleClass('nav--ul_active')
+    $('.nav ul').toggleClass('active');
     return false;
   });
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
  	// Fancybox init
 
  	$('[data-fancybox]').fancybox({
- 		
+
  	});
  
   

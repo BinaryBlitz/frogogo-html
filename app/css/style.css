@@ -92,6 +92,9 @@ a img {
     color: #4ad9bd;
     font-size: 1rem; }
 
+.burger-wrap {
+  display: none; }
+
 .search {
   display: flex;
   align-items: center; }
@@ -100,7 +103,7 @@ a img {
     color: #4ad9bd;
     margin-right: 1rem; }
   .search input {
-    margin-top: .3rem;
+    margin-top: .2rem;
     width: 13.75rem;
     color: #17286f;
     letter-spacing: 2px;
@@ -207,14 +210,13 @@ a img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.8rem; }
-  .showcase > div {
-    width: 33.33%;
-    flex-shrink: 0; }
 
 .showcase-descr {
   background-color: #eef7e8;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 33.33%;
+  flex-shrink: 0; }
 
 .showcase-content {
   padding: 2.5rem 3rem 2rem;
@@ -284,7 +286,9 @@ a img {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 33.33%;
+  flex-shrink: 0; }
 
 .showcase-bonus {
   padding-top: 3.4rem;
@@ -309,6 +313,8 @@ a img {
     font-weight: bold; }
 
 .showcase-product {
+  width: 33.33%;
+  flex-shrink: 0;
   background: #fff;
   padding-top: 4.3rem;
   text-align: center; }
@@ -349,7 +355,8 @@ a img {
 .showcase-prices {
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-size: .9rem; }
+  font-size: .9rem;
+  padding: 0 .5rem; }
   .showcase-prices > div {
     line-height: 1.4;
     margin-bottom: .3rem; }
@@ -593,7 +600,7 @@ a img {
 
 .footer-payment {
   width: 12.5rem;
-  flex-shink: 0; }
+  flex-shrink: 0; }
   .footer-payment-methods {
     display: flex;
     margin-top: 2.5rem;

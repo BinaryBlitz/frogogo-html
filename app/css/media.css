@@ -1,12 +1,190 @@
 @media only screen and (max-width: 1200px) {
   .container {
-    width: 970px; } }
+    width: 970px; }
+  .footer-sub {
+    width: 17rem; } }
 
 @media only screen and (max-width: 991px) {
   .container {
+    width: 750px; }
+  .logo {
+    top: 1rem; }
+  .nav ul li {
+    margin-right: .5rem; }
+    .nav ul li a {
+      padding: 0 .5rem; }
+  .showcase {
+    justify-content: center; }
+    .showcase-photo {
+      width: 50%;
+      order: 3;
+      height: 500px; }
+    .showcase-descr {
+      width: 50%; }
+    .showcase-product {
+      width: 50%; }
+  .collection-items > div {
+    width: 50%;
+    border-bottom: 1px solid #f5f5f5; }
+  .shares-time {
+    font-size: .8rem; }
+  .footer-sub {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center; }
+  .footer {
+    flex-wrap: wrap; }
+  .footer-sub-form {
+    width: 50%;
+    margin: 0 auto; }
+  .location-container {
     width: 750px; } }
 
 @media only screen and (max-width: 767px) {
   .container {
     width: auto;
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .location-container {
+    width: 550px; }
+  .location-manually {
+    display: block; }
+    .location-manually .input {
+      margin-bottom: 20px; }
+  .location {
+    margin-right: 1rem; }
+  .search input {
+    width: 7rem; }
+  .burger-wrap {
+    display: block;
+    width: 30px; }
+  .burger-wrap a {
+    cursor: pointer;
+    padding: 12px 0;
+    display: block; }
+  .burger-wrap a span {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 7px;
+    background: #17286f;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+  .burger-wrap a span:before, .burger-wrap a span:after {
+    position: absolute;
+    background: #17286f;
+    content: '';
+    width: 30px;
+    height: 5px;
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 7px; }
+  .burger-wrap a span:before {
+    top: -8px; }
+  .burger-wrap a span:after {
+    top: 8px; }
+  .burger-wrap a.active span {
+    background: transparent; }
+  .burger-wrap a.active span:before {
+    -webkit-transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(5px, 6px); }
+  a.active span:after {
+    -webkit-transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px); }
+  .nav ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 100%;
+    z-index: -1;
+    background: #17286f;
+    z-index: 9999;
+    padding: 1rem 0;
+    visibility: hidden;
+    transition: 300ms; }
+    .nav ul.active {
+      z-index: 999;
+      right: 0;
+      visibility: visible; }
+    .nav ul li {
+      display: block;
+      text-align: center; }
+      .nav ul li a {
+        color: #fff; }
+        .nav ul li a:after {
+          display: none; }
+  .navigation {
+    position: relative;
+    padding: 1rem 0; }
+  .header {
+    padding-top: 5.5rem; }
+  .showcase-descr {
+    width: 100%; }
+  .showcase-photo {
+    height: auto; }
+  .showcase-prices {
+    padding-bottom: 2rem; }
+  .shares-item {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 4rem; }
+  .shares {
+    padding-bottom: 0; }
+  .footer-payment {
+    width: 100%;
+    margin-top: 2rem; }
+    .footer-payment img {
+      margin-right: 2rem; }
+  .footer-payment-methods {
+    justify-content: flex-start; }
+  .showcase-name {
+    max-height: 100%;
+    font-size: 2rem; }
+  .showcase-text {
+    max-height: 100%; }
+  .footer-button {
+    text-align: center; } }
+
+@media only screen and (max-width: 575px) {
+  .location-container {
+    width: 280px; }
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem; }
+  .header-info {
+    justify-content: center; }
+  .search input {
+    border-bottom: 1px solid #4ad9bd;
+    height: 1rem; }
+  .head {
+    height: 10rem;
+    font-size: 2rem; }
+  .location-modal .head {
+    padding: 2rem 0; }
+  .fancybox-close-small {
+    right: 1rem;
+    top: 1rem; }
+  .location-cities ul li {
+    width: 100%; }
+  .showcase-content {
+    padding: 1.5rem; }
+  .showcase-product {
+    width: 100%;
+    padding-top: 1.5rem; }
+  .showcase-photo {
+    width: 100%;
+    height: 400px; }
+  .collection-items > div {
+    width: 100%;
+    border-right: 0 !important;
+    border-left: 0 !important; }
+  .collection-brand {
+    order: -1; }
+  .footer-nav {
+    padding-bottom: 2rem;
+    margin-top: 1rem; }
+  .footer-sub-form {
+    width: 100%; } }
