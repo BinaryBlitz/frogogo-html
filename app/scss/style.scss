@@ -64,7 +64,116 @@ a img {
   line-height: 1;
 }
 
+.btn {
+  width: 14.38rem;
+  line-height: 2.5rem;
+  background: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.81rem;
+  letter-spacing: 2px;
+  border: 2px solid $dark-blue;
+  text-transform: uppercase;
+  color: $dark-blue;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    background: $dark-blue;
+    color: #fff;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
 //========= Header
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.69rem;
+  &-info {
+    display: flex;
+    align-items: center;
+    height: 4.69rem;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  color: $dark-blue;
+  margin-right: 3rem;
+  i {
+    margin-right: 1rem;
+    color: $blue;
+    font-size: 1rem;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 1rem;
+    color: $blue;
+    margin-right: 1rem;
+  }
+  input {
+    margin-top: .3rem;
+    width: 13.75rem;
+    color: $dark-blue;
+    letter-spacing: 2px;
+    border: none;
+    &::-webkit-input-placeholder { 
+      color: $dark-blue;
+    }
+    &:-moz-placeholder { 
+      color: $dark-blue;
+    }
+    &::-moz-placeholder { 
+      color: $dark-blue;
+    }
+    &:-ms-input-placeholder {
+      color: $dark-blue;
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  &-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $dark-blue;
+    letter-spacing: 2px;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &-separate {
+    margin: 0 0.5rem;
+  }
+  &-img {
+    margin-left: 1rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 2.5rem;
+  width: 7.88rem;
+  transform: translateX(-50%);
+}
+
+//========= Navigation
 
 .navigation {
   display: flex;
@@ -262,21 +371,21 @@ a img {
     text-align: center;
     flex-wrap: wrap;
     letter-spacing: 1.8px;
-    font-size: 1.25rem;
     color: $dark-blue;
-    font-weight: bold;
-    span {
+    &-before {
       font-weight: normal;
       font-size: 2.25rem;
     }
-    i {
-      font-style: normal;
+    &-text {
       display: block;
       margin-top: .5rem;
+      font-size: 1.25rem;
+      font-weight: bold;
     }
-  }
-  &-bonus-size {
-    font-size: 2.25rem;
+    &-size {
+      font-size: 2.25rem;
+    font-weight: bold;
+    }
   }
 }
 
@@ -596,7 +705,7 @@ a img {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   &-wrap {
     border-top: 1px solid #e6e6e6;
     padding-top: 2.5rem;
@@ -671,11 +780,11 @@ a img {
     font-size: 1rem;
     margin: 1rem 0 2rem;
     font-weight: 600;
-    b {
+    .size {
       font-weight: bold;
       color: $blue;
     }
-    span {
+    .units {
       color: $blue;
     }
   }
@@ -695,26 +804,6 @@ a img {
     border: solid 1px #c6cdd7;
     font-family: inherit;
     padding: 0 1.5rem;
-  }
-}
-
-.btn {
-  width: 14.38rem;
-  line-height: 2.5rem;
-  background: #fff;
-  text-align: center;
-  font-weight: 600;
-  font-size: 0.81rem;
-  letter-spacing: 2px;
-  border: 2px solid $dark-blue;
-  text-transform: uppercase;
-  color: $dark-blue;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 300ms;
-  &:hover {
-    background: $dark-blue;
-    color: #fff;
   }
 }
 
@@ -747,5 +836,23 @@ a img {
         color: $dark-blue;
       }
     }
+  }
+}
+
+//======== Free delivery
+
+.free-delivery {
+  background-color: #e2ecf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 1rem;
+  &-text {
+    color: $dark-blue;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 1rem;
   }
 }

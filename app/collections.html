@@ -12,11 +12,42 @@
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+
+  <!-- Free deliver -->
+
+  <div class="free-delivery">
+    <img src="images/icon-message-delivery.svg" alt="" class="free-delivery-img">
+    <span class="free-delivery-text">Бесплатная доставка при заказе от 1000 рублей</span>
+  </div>
  
   <!-- Header -->
 
   <div class="header-wrap">
     <div class="container">
+
+      <div class="header">
+        <div class="header-info">
+          <div class="location">
+            <i class="fa fa-map-marker"></i>
+            <div class="location-city">Москва</div>
+          </div>
+          <form action="" class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="ПОИСК">
+          </form>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="images/logo-header-frogogo.svg" alt="">
+          </a>
+        </div>
+        <div class="login">
+          <a href="#" class="login-link bold">Регистрация</a>
+          <div class="login-separate">/</div>
+          <a href="#" class="login-link">вход</a>
+          <img class="login-img" src="images/icon-header-user.svg" alt="">
+        </div>
+      </div>
 
       <!-- Navigation -->
 
@@ -32,7 +63,7 @@
         </div>
         <div class="to-cart">
           <a class="to-cart-link" href="#">
-            <span>корзина</span>
+            корзина
             <i class="fa  fa-shopping-cart"></i>
           </a>
         </div>
@@ -60,8 +91,9 @@
           </div>
           <div class="showcase-photo" style="background-image: url(images/campaign-img-sweetdreams.jpg);">
             <div class="showcase-bonus">
-              <span>до</span><b class="showcase-bonus-size">70%</b>
-              <i>за бонусы</i>
+              <span class="showcase-bonus-before">до</span>
+              <span class="showcase-bonus-size">70%</span>
+              <span class="showcase-bonus-text">за бонусы</span>
             </div>
           </div>
           <div class="showcase-product">
@@ -344,7 +376,7 @@
         <div class="footer-item footer-sub">
           <h3 class="footer-head footer-head-black">Подпишитесь на нашу рассылку</h3>
           <div class="footer-descr">
-            и получите <b>500</b> <span>рублей</span> на бонусный счет
+            и получите <span class="size">500</span> <span class="units">рублей</span> на бонусный счет
           </div>
           <form action="" class="footer-sub-form">
             <div class="input">
