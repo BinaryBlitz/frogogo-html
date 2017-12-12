@@ -39,11 +39,25 @@ $(document).ready(function() {
 
  	// Fancybox init
 
- 	$('[data-fancybox]').fancybox({
+ 	if( $('[data-fancybox]').length ) {
+ 		$('[data-fancybox]').fancybox();
+ 	}
+ 	
+ 	// Balance popup
 
+ 	$('.balance-text').click(function() {
+ 		$(this).parent().toggleClass('active');
+ 		$(this).next().toggleClass('active');
  	});
- 
-  
+
+ 	$(document).on('click', function(e) {
+	  if (!$(e.target).closest(".balance").length) {
+	    $('.balance').removeClass('active');
+	    $('.balance-nav').removeClass('active');
+	  }
+	  e.stopPropagation();
+	});
+	  
 });
 
 
