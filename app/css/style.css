@@ -1783,7 +1783,8 @@ a img {
     margin-right: 1.25rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    flex-shrink: 0; }
   .cart-product-name {
     font-size: .95rem;
     letter-spacing: .5px;
@@ -1862,14 +1863,23 @@ a img {
 
 .cart-inner {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between; }
 
 .cart-content {
   width: 50%; }
 
-.cart-cheque {
-  width: 40%; }
+.cart-cheque-wrap {
+  width: 40%;
+  position: relative; }
+
+.cart-cheque.fixed {
+  position: fixed;
+  top: 30px; }
+
+.cart-cheque.abs {
+  position: absolute;
+  bottom: 60px;
+  right: 0 !important; }
 
 .cart-item {
   border-bottom: 1px solid #d8d8d8;

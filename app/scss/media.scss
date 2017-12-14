@@ -158,9 +158,19 @@ $bg: #f5f5f5;
   .cart-content {
     width: 100%;
   }
-  .cart-cheque {
+  .cart-cheque-wrap {
     width: 100%;
     margin-bottom: 4rem;
+  }
+  .cart-cheque {
+    &.fixed {
+      position: static;
+      width: 100% !important;
+    }
+    &.abs {
+      position: static;
+      width: 100% !important;
+    }
   }
 }
 
@@ -490,19 +500,28 @@ $bg: #f5f5f5;
   .brands-name {
     letter-spacing: .5px;
   }
+  // .cart-table {
+  //   td,th,thead,tbody,table,tr {
+  //     display: block;
+  //     width: 100% !important;
+  //     text-align: center !important;
+  //     border-bottom: 0;
+  //   }
+  //   td {
+  //     border-bottom: 0 !important;
+  //     padding: 1rem .5rem !important;
+  //     &:last-child {
+  //       border-bottom: 1px solid #d8d8d8 !important;
+  //     }
+  //   }
+  // }
   .cart-table {
-    td,th,thead,tbody,table,tr {
-      display: block;
-      width: 100% !important;
-      text-align: center !important;
-      border-bottom: 0;
-    }
-    td {
-      border-bottom: 0 !important;
-      padding: 1rem .5rem !important;
-      &:last-child {
-        border-bottom: 1px solid #d8d8d8 !important;
-      }
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    table {
+      min-width: 570px;
+      margin-bottom: 0;
     }
   }
   .cart-payment-method {

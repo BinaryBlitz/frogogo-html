@@ -2284,6 +2284,7 @@ a img {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
   }
   &-name {
     font-size: .95rem;
@@ -2390,14 +2391,25 @@ a img {
 .cart {
   &-inner {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
   }
   &-content {
     width: 50%;
   }
-  &-cheque {
+  &-cheque-wrap {
     width: 40%;
+    position: relative;
+  }
+  &-cheque {
+    &.fixed {
+      position: fixed;
+      top: 30px;
+    }
+    &.abs {
+      position: absolute;
+      bottom: 60px;
+      right: 0 !important;
+    }
   }
   &-item {
     border-bottom: 1px solid #d8d8d8;

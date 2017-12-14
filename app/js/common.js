@@ -125,6 +125,30 @@ $(document).ready(function() {
       handle.text( ui.value + '₽' );
     }
   });
+
+  // Fixed cheque
+
+  var cheque = $('.cart-cheque');
+  var cheque_wrap = $('.cart-cheque-wrap');
+
+  var cheque_right = $(window).width() - (cheque_wrap.offset().left + cheque_wrap.outerWidth());
+  var cheque_width = $('.cart-cheque-wrap').outerWidth();
+
+  $(window).scroll(function() {
+  	var first_value = $(window).scrollTop() > ( $('.cart-inner').offset().top - 30 );
+  	var second_value = $(window).scrollTop() < ( cheque_wrap.offset().top + ( cheque_wrap.outerHeight() - cheque.outerHeight()) - 90)
+  	if( first_value && second_value ) {
+  		cheque.addClass('fixed');
+  		cheque.removeClass('abs');
+  		cheque.css({"right": cheque_right, "width": cheque_width});
+  	} else if ( !second_value) {
+  		cheque.addClass('abs');
+  		cheque.removeClass('fixed');
+  	} else {
+  		cheque.removeClass('fixed');
+  		cheque.removeClass('abs');
+  	}
+  });
 	  
 });
 

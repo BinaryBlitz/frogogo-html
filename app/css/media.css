@@ -105,9 +105,15 @@
     display: block; }
   .cart-content {
     width: 100%; }
-  .cart-cheque {
+  .cart-cheque-wrap {
     width: 100%;
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .cart-cheque.fixed {
+    position: static;
+    width: 100% !important; }
+  .cart-cheque.abs {
+    position: static;
+    width: 100% !important; } }
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -349,16 +355,13 @@
       margin-right: 0; }
   .brands-name {
     letter-spacing: .5px; }
-  .cart-table td, .cart-table th, .cart-table thead, .cart-table tbody, .cart-table table, .cart-table tr {
-    display: block;
-    width: 100% !important;
-    text-align: center !important;
-    border-bottom: 0; }
-  .cart-table td {
-    border-bottom: 0 !important;
-    padding: 1rem .5rem !important; }
-    .cart-table td:last-child {
-      border-bottom: 1px solid #d8d8d8 !important; }
+  .cart-table {
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem; }
+    .cart-table table {
+      min-width: 570px;
+      margin-bottom: 0; }
   .cart-payment-method {
     display: block; }
   .cart .option {
