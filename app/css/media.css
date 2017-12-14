@@ -1,8 +1,21 @@
+@media only screen and (max-width: 1300px) {
+  .another-product-carousel .slick-arrow {
+    left: -1rem; }
+  .another-product-carousel .slick-next {
+    left: auto;
+    right: -1rem; } }
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 970px; }
   .footer-sub {
-    width: 17rem; } }
+    width: 17rem; }
+  .product-gallery {
+    width: 34.38rem; }
+  .product-descr {
+    margin-right: 0;
+    padding-right: 2.5rem;
+    width: 38rem; } }
 
 @media only screen and (max-width: 991px) {
   .container {
@@ -12,7 +25,7 @@
   .nav ul li {
     margin-right: .5rem; }
     .nav ul li a {
-      padding: 0 .5rem; }
+      padding: 0 .3rem; }
   .showcase {
     justify-content: center; }
     .showcase-photo {
@@ -59,7 +72,42 @@
     .products-item:nth-child(4n) {
       margin-right: 2%; }
     .products-item:nth-child(3n) {
-      margin-right: 0%; } }
+      margin-right: 0%; }
+  .product-gallery-mini {
+    margin-left: 1rem;
+    width: 5rem; }
+    .product-gallery-mini .item {
+      height: 5rem; }
+  .product-info {
+    padding-left: 1.5rem; }
+  .product-gallery {
+    width: 24rem; }
+  .product-gallery-main {
+    height: 320px; }
+  .product-money-back {
+    margin-bottom: 1.5rem; }
+  .product-add {
+    margin-bottom: 2rem; }
+  .product-descr {
+    width: 25.5rem; }
+  .product-property-list {
+    display: block; }
+  .brands-img img {
+    max-width: 65%;
+    max-height: 65%; }
+  .brands-item {
+    width: 32%; }
+    .brands-item:nth-child(2n) {
+      margin-right: 2%; }
+    .brands-item:nth-child(3n) {
+      margin-right: 0; }
+  .cart-inner {
+    display: block; }
+  .cart-content {
+    width: 100%; }
+  .cart-cheque {
+    width: 100%;
+    margin-bottom: 4rem; } }
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -198,7 +246,31 @@
     .products-item:nth-child(3n) {
       margin-right: 2%; }
     .products-item:nth-child(2n) {
-      margin-right: 0%; } }
+      margin-right: 0%; }
+  .product {
+    display: block; }
+  .product-gallery {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+    margin-bottom: 2rem; }
+  .product-gallery-mini {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 0; }
+    .product-gallery-mini .item {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1rem; }
+  .product-info {
+    padding-left: 0; }
+  .product-content {
+    display: block; }
+  .product-descr {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem; } }
 
 @media only screen and (max-width: 575px) {
   .location-container {
@@ -263,4 +335,59 @@
   .products-item {
     width: 100%;
     margin-right: 0 !important;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .product-gallery-mini .item {
+    width: 5rem;
+    height: 5rem; }
+  .product .btn {
+    font-size: .7rem; }
+  .brands-item {
+    width: 49%; }
+    .brands-item:nth-child(3n) {
+      margin-right: 2%; }
+    .brands-item:nth-child(2n) {
+      margin-right: 0; }
+  .brands-name {
+    letter-spacing: .5px; }
+  .cart-table td, .cart-table th, .cart-table thead, .cart-table tbody, .cart-table table, .cart-table tr {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    border-bottom: 0; }
+  .cart-table td {
+    border-bottom: 0 !important;
+    padding: 1rem .5rem !important; }
+    .cart-table td:last-child {
+      border-bottom: 1px solid #d8d8d8 !important; }
+  .cart-payment-method {
+    display: block; }
+  .cart .option {
+    margin-bottom: 1rem; }
+  .cart label {
+    margin-bottom: 1rem; }
+  .cart-cost {
+    display: block; }
+  .cart-city {
+    display: block; }
+  .cart-delivery-method {
+    display: block; }
+  .cart-product {
+    justify-content: center;
+    text-align: left; }
+  .cart-cheque ul {
+    padding: 1rem; }
+    .cart-cheque ul li {
+      font-size: .80rem; }
+    .cart-cheque ul .price {
+      text-align: right;
+      font-size: 1rem;
+      padding-left: 1rem; }
+    .cart-cheque ul .big-price {
+      font-size: 1rem;
+      padding-left: 1rem; }
+  .input input {
+    padding: 0 1rem; }
+  .cart-ordering-item {
+    padding: 2rem 0; }
+    .cart-ordering-item label {
+      margin-left: 0; } }

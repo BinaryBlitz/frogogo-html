@@ -18,7 +18,36 @@ $(document).ready(function() {
  	$('.showcase-product-carousel').slick({
  		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
  		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
- 		speed: 200
+ 		speed: 200,
+ 		draggable: false
+ 	});
+
+ 	$('.another-product-carousel').slick({
+ 		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+ 		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+ 		speed: 200,
+ 		slidesToShow: 4,
+ 		slidesToScroll: 1,
+ 		responsive: [
+	    {
+	      breakpoint: 1200,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 575,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
  	});
 
  	// Location checked handle
@@ -57,6 +86,45 @@ $(document).ready(function() {
 	  }
 	  e.stopPropagation();
 	});
+
+	// Gallery change image
+
+	$('.product-gallery-mini .item').click(function(e) {
+		e.preventDefault();
+		var img_src = $(this).find('img').attr('src');
+		$('.product-gallery-main img').attr('src', img_src);
+	});
+
+	// Cart amount
+
+	$('.cart-amount-minus').click(function() {
+		var input = $(this).next();
+		if( input.val() > 1 ) {
+			input.val( input.val() - 1 );
+		}
+	});
+
+	$('.cart-amount-plus').click(function() {
+		var input = $(this).prev();
+		input.val( +input.val() + 1 );
+	});
+
+	// Cart bonus slider
+
+	var handle = $( ".cart-bonus-rub" );
+	var slider = $('.slider');
+  slider.slider({
+  	min:0,
+  	value: slider.data('value'),
+  	range: 'min',
+  	max: slider.data('max'),
+    create: function() {
+      handle.text( $( this ).slider( "value" ) + '₽' );
+    },
+    slide: function( event, ui ) {
+      handle.text( ui.value + '₽' );
+    }
+  });
 	  
 });
 
