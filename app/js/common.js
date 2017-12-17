@@ -19,7 +19,8 @@ $(document).ready(function() {
  		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
  		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
  		speed: 200,
- 		draggable: false
+ 		draggable: false,
+ 		swipe: false
  	});
 
  	$('.another-product-carousel').slick({
@@ -48,6 +49,13 @@ $(document).ready(function() {
 	      }
 	    }
 	  ]
+ 	});
+
+ 	$('.get-bonus-shares').slick({
+ 		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+ 		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+ 		speed: 200,
+ 		dots: true
  	});
 
  	// Location checked handle
@@ -133,6 +141,11 @@ $(document).ready(function() {
 
   var cheque_right = $(window).width() - (cheque_wrap.offset().left + cheque_wrap.outerWidth());
   var cheque_width = $('.cart-cheque-wrap').outerWidth();
+
+  $(window).resize(function() {
+  	cheque_width = $('.cart-cheque-wrap').outerWidth();
+  	cheque_right = $(window).width() - (cheque_wrap.offset().left + cheque_wrap.outerWidth());
+  });
 
   $(window).scroll(function() {
   	var first_value = $(window).scrollTop() > ( $('.cart-inner').offset().top - 30 );
