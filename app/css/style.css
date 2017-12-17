@@ -1987,6 +1987,11 @@ a img {
   align-items: center;
   margin-bottom: 2rem; }
 
+.cart-info-item {
+  display: none; }
+  .cart-info-item.active {
+    display: block; }
+
 .cart-info p {
   font-size: .75rem;
   color: #1e1e3c;
@@ -2149,6 +2154,11 @@ a img {
   color: #1e1e3c;
   margin-bottom: 1.5rem;
   line-height: 1.4; }
+
+.delivery-el {
+  display: none; }
+  .delivery-el.active {
+    display: block; }
 
 .delivery-cheque {
   width: 40%;

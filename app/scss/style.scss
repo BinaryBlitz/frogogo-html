@@ -2544,6 +2544,12 @@ a img {
     margin-bottom: 2rem;
   }
   &-info {
+    &-item {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
     p {
       font-size: .75rem;
       color: #1e1e3c;
@@ -2754,6 +2760,12 @@ a img {
       color: #1e1e3c;
       margin-bottom: 1.5rem;
       line-height: 1.4;
+    }
+  }
+  &-el {
+    display: none;
+    &.active {
+      display: block;
     }
   }
 }

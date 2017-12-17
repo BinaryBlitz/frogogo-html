@@ -86,21 +86,21 @@
             <div class="delivery-item delivery-method">
               <div class="delivery-label">Способ доставки</div>
               <div class="delivery-methods">
-                <label>
+                <label data-target="delivery1">
                   <div class="radio">
                     <input type="radio" name="delivery-method" checked="checked">
                     <span></span>
                   </div>
                   Курьерская доставка
                 </label>
-                <label>
+                <label data-target="delivery2">
                   <div class="radio">
                     <input type="radio" name="delivery-method">
                     <span></span>
                   </div>
                   Почтой России
                 </label>
-                <label>
+                <label data-target="delivery3">
                   <div class="radio">
                     <input type="radio" name="delivery-method">
                     <span></span>
@@ -110,8 +110,16 @@
               </div>
             </div>
             <div class="delivery-item delivery-description">
-              <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
-              <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после 20:00, поступают в доставку на следующий день.</p>
+              <div class="delivery-el active" data-info="delivery1">
+                <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
+                <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после 20:00, поступают в доставку на следующий день.</p>
+              </div>
+              <div class="delivery-el" data-info="delivery2">
+                <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
+              </div>
+              <div class="delivery-el" data-info="delivery3">
+                <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после 20:00, поступают в доставку на следующий день.</p>
+              </div>
             </div>
           </div>
           <div class="delivery-cheque">

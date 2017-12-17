@@ -121,18 +121,23 @@ $(document).ready(function() {
 
 	var handle = $( ".cart-bonus-rub" );
 	var slider = $('.slider');
-  slider.slider({
-  	min:0,
-  	value: slider.data('value'),
-  	range: 'min',
-  	max: slider.data('max'),
-    create: function() {
-      handle.text( $( this ).slider( "value" ) + '₽' );
-    },
-    slide: function( event, ui ) {
-      handle.text( ui.value + '₽' );
-    }
-  });
+	if (slider.length) {
+
+		slider.slider({
+	  	min:0,
+	  	value: slider.data('value'),
+	  	range: 'min',
+	  	max: slider.data('max'),
+	    create: function() {
+	      handle.text( $( this ).slider( "value" ) + '₽' );
+	    },
+	    slide: function( event, ui ) {
+	      handle.text( ui.value + '₽' );
+	    }
+	  });
+			
+	}
+  
 
   // Fixed cheque
 
@@ -163,6 +168,26 @@ $(document).ready(function() {
   	}
   });
 	  
+});
+
+// Cart delivery change description
+
+$('.cart-delivery-method label').click(function() {
+	var target = '[data-info="' + $(this).attr('data-target') +'"]';
+	$('.cart-info-item').hide();
+
+	$(target).show();
+	
+});
+
+// Cart delivery change description
+
+$('.delivery-methods label').click(function() {
+	var target = '[data-info="' + $(this).attr('data-target') +'"]';
+	$('.delivery-el').hide();
+
+	$(target).show();
+	
 });
 
 
