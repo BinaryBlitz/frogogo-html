@@ -1,2 +1,8 @@
 node_modules/
 assets/
+
+# macOS
+.DS_Store
+
+# Prepros
+prepros-*
