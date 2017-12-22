@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  //Burger menu
+  // Burger menu
 
   $(".burger-wrap a").click(function() {
     $(this).toggleClass("active");
