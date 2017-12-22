@@ -18,10 +18,6 @@ gulp.task("sass", function() {
       .src("app/scss/*.scss")
       .pipe(plumber())
       .pipe(sass())
-      // .pipe(autoprefixer({
-      //     browsers: ['last 2 versions'],
-      //     cascade: false
-      // }))
       .pipe(gulp.dest("app/css"))
       .pipe(browserSync.stream()) );
 });
