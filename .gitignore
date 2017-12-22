@@ -6,3 +6,9 @@ assets/
 
 # Prepros
 prepros-*
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
