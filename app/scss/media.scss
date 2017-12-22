@@ -47,9 +47,9 @@ $bg: #f5f5f5;
     top: 1rem;
   }
   .nav ul li {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     a {
-      padding: 0 .3rem;
+      padding: 0 0.3rem;
     }
   }
   .showcase {
@@ -71,7 +71,7 @@ $bg: #f5f5f5;
     border-bottom: 1px solid #f5f5f5;
   }
   .shares-time {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .footer-sub {
     width: 100%;
@@ -236,7 +236,7 @@ $bg: #f5f5f5;
   .burger-wrap {
     display: block;
     width: 30px;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
   }
   .burger-wrap a {
     cursor: pointer;
@@ -250,18 +250,19 @@ $bg: #f5f5f5;
     height: 5px;
     border-radius: 7px;
     background: $dark-blue;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
-  .burger-wrap a span:before, .burger-wrap a span:after {
+  .burger-wrap a span:before,
+  .burger-wrap a span:after {
     position: absolute;
     background: $dark-blue;
-    content: '';
+    content: "";
     width: 30px;
     height: 5px;
     left: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     border-radius: 7px;
   }
   .burger-wrap a span:before {
@@ -276,11 +277,11 @@ $bg: #f5f5f5;
   }
   .burger-wrap a.active span:before {
     -webkit-transform: rotate(45deg) translate(5px, 6px);
-            transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(5px, 6px);
   }
   a.active span:after {
     -webkit-transform: rotate(-45deg) translate(5px, -6px);
-            transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px);
   }
   .nav ul {
     display: block;
@@ -318,7 +319,7 @@ $bg: #f5f5f5;
     padding-top: 5.5rem;
   }
   .showcase-descr {
-    width: 100%;   
+    width: 100%;
   }
   .showcase-photo {
     height: auto;
@@ -368,7 +369,7 @@ $bg: #f5f5f5;
     margin-right: 0 !important;
     margin-bottom: 2rem;
   }
-  .signup-advan-wrap:after  {
+  .signup-advan-wrap:after {
     height: 800px;
   }
   .collection-sliders {
@@ -559,7 +560,7 @@ $bg: #f5f5f5;
     height: 5rem;
   }
   .product .btn {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .brands-item {
     width: 49%;
@@ -571,7 +572,7 @@ $bg: #f5f5f5;
     }
   }
   .brands-name {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
   .cart-table {
     overflow-y: scroll;
@@ -607,7 +608,7 @@ $bg: #f5f5f5;
   .cart-cheque ul {
     padding: 1rem;
     li {
-      font-size: .80rem;
+      font-size: 0.8rem;
     }
     .price {
       text-align: right;
@@ -725,12 +726,12 @@ $bg: #f5f5f5;
     font-size: 1.1rem;
   }
   .welcome-prize-item .text {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .welcome-prize-item .value {
     font-size: 2.5rem;
   }
   .welcome-prize-item {
-    padding: 1rem ;
+    padding: 1rem;
   }
 }
