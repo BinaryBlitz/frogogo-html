@@ -1,391 +1,441 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Delivery</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Delivery</title>
 
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
 
-  <!-- Header -->
+    <!-- Header -->
 
-  <div class="header-wrap">
-    <div class="container">
-
-      <div class="header">
-        <div class="header-info">
-          <a href="#location-modal" data-fancybox class="location">
-            <i class="fa fa-map-marker"></i>
-            <div class="location-city">Москва</div>
-          </a>
-          <form action="" class="search">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="ПОИСК">
-          </form>
-        </div>
-        <div class="logo">
-          <a href="/">
-            <img src="images/logo-header-frogogo.svg" alt="">
-          </a>
-        </div>
-        <div class="login">
-          <a href="#" class="login-link bold">Регистрация</a>
-          <div class="login-separate">/</div>
-          <a href="#" class="login-link">вход</a>
-          <img class="login-img" src="images/icon-header-user.svg" alt="">
-        </div>
-      </div>
-
-      <!-- Navigation -->
-
-      <div class="navigation">
-        <div class="nav">
-          <div class="burger-wrap">
-            <a href="#"><span></span></a>
-          </div>
-          <ul>
-            <li><a href="#">Коллекции</a></li>
-            <li><a href="#">Что такое Frogogo?</a></li>
-            <li><a href="#">Бренды</a></li>
-            <li><a href="#">Возврат денег</a></li>
-            <li><a href="#">Доставка</a></li>
-          </ul>
-        </div>
-        <div class="to-cart">
-          <a class="to-cart-link" href="#">
-            корзина
-            <i class="fa  fa-shopping-cart"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Delivery -->
-
-  <div class="delivery-wrap">
-    <div class="container">
-      <div class="delivery">
-        <h2 class="head">Доставка</h2>
-        <div class="delivery-container">
-          <div class="delivery-form">
-            <div class="delivery-item delivery-city">
-              <div class="delivery-label">Введите город</div>
-              <div class="input">
-                <input type="text">
-              </div>
-            </div>
-            <div class="delivery-item delivery-method">
-              <div class="delivery-label">Способ доставки</div>
-              <div class="delivery-methods">
-                <label data-target="delivery1">
-                  <div class="radio">
-                    <input type="radio" name="delivery-method" checked="checked">
-                    <span></span>
-                  </div>
-                  Курьерская доставка
-                </label>
-                <label data-target="delivery2">
-                  <div class="radio">
-                    <input type="radio" name="delivery-method">
-                    <span></span>
-                  </div>
-                  Почтой России
-                </label>
-                <label data-target="delivery3">
-                  <div class="radio">
-                    <input type="radio" name="delivery-method">
-                    <span></span>
-                  </div>
-                  Из пункта самовывоза 
-                </label>
-              </div>
-            </div>
-            <div class="delivery-item delivery-description">
-              <div class="delivery-el active" data-info="delivery1">
-                <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
-                <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после 20:00, поступают в доставку на следующий день.</p>
-              </div>
-              <div class="delivery-el" data-info="delivery2">
-                <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
-              </div>
-              <div class="delivery-el" data-info="delivery3">
-                <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после 20:00, поступают в доставку на следующий день.</p>
-              </div>
-            </div>
-          </div>
-          <div class="delivery-cheque">
-            <ul>
-              <li>
-                <span class="name">Стоимость доставки </span>
-                <span class="value">500₽</span>
-              </li>
-              <li>
-                <span class="name">Бесплатно при заказе на сумму от</span>
-                <span class="value">2500₽</span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <span class="name">Срок доставки</span>
-                <span class="value">7-8 дней</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-
-  <!-- Footer -->
-
-  <div class="footer-wrap">
-    <div class="container">
-      <div class="footer">
-        <div class="footer-item">
-          <h3 class="footer-head">Меню</h3>
-          <ul class="footer-nav">
-            <li><a href="#">Коллекции</a></li>
-            <li><a href="#">Что такое Frogogo?</a></li>
-            <li><a href="#">Бренды</a></li>
-            <li><a href="#">Возврат денег</a></li>
-            <li><a href="#">Доставка</a></li>
-          </ul>
-        </div>
-        <div class="footer-item">
-          <h3 class="footer-head">Помощь</h3>
-          <ul class="footer-nav">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Карьера</a></li>
-            <li><a href="#">Поставщики</a></li>
-            <li><a href="#">Партнерская программа</a></li>
-            <li><a href="#">Конфиденциальность</a></li>
-            <li><a href="#">Публичная оферта</a></li>
-          </ul>
-        </div>
-        <div class="footer-item footer-payment">
-          <h3 class="footer-head">Способы оплаты</h3>
-          <div class="footer-payment-methods">
-            <img src="images/logo-footer-mastercard.png" alt="">
-            <img src="images/logo-footer-visa.png" alt="">
-            <img src="images/logo-footer-alfabank.png" alt="">
-          </div>
-          <div class="footer-payment-text">
-            <p>Вы можете оплатить покупки наличными или банковской картой при получении заказа.</p> 
-            <p>Либо оплатить заказ онлайн на сайте.</p>
-          </div>
-        </div>
-        <div class="footer-item footer-sub">
-          <h3 class="footer-head footer-head-black">Подпишитесь на нашу рассылку</h3>
-          <div class="footer-descr">
-            и получите <span class="size">500</span> <span class="units">рублей</span> на бонусный счет
-          </div>
-          <form action="" class="footer-sub-form">
-            <div class="input">
-              <input type="email" placeholder="Электронная почта" required>
-            </div>
-            <div class="input">
-              <input type="text" placeholder="Пароль">
-            </div>
-            <div class="footer-button">
-              <button type="submit" class="btn">Подписаться</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="footer-line-wrap">
+    <div class="header-wrap">
       <div class="container">
-        <div class="footer-line">
-          <div class="copy">© frogogo 2017</div>
-          <div class="social">
+
+        <div class="header">
+          <div class="header-info">
+            <a href="#location-modal" data-fancybox class="location">
+              <i class="fa fa-map-marker"></i>
+              <div class="location-city">Москва</div>
+            </a>
+            <form action="" class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="ПОИСК">
+            </form>
+          </div>
+          <div class="logo">
+            <a href="/">
+              <img src="images/logo-header-frogogo.svg" alt="">
+            </a>
+          </div>
+          <div class="login">
+            <a href="#" class="login-link bold">Регистрация</a>
+            <div class="login-separate">/</div>
+            <a href="#" class="login-link">вход</a>
+            <img class="login-img" src="images/icon-header-user.svg" alt="">
+          </div>
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="navigation">
+          <div class="nav">
+            <div class="burger-wrap">
+              <a href="#">
+                <span></span>
+              </a>
+            </div>
             <ul>
-              <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+              <li>
+                <a href="#">Коллекции</a>
+              </li>
+              <li>
+                <a href="#">Что такое Frogogo?</a>
+              </li>
+              <li>
+                <a href="#">Бренды</a>
+              </li>
+              <li>
+                <a href="#">Возврат денег</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
             </ul>
+          </div>
+          <div class="to-cart">
+            <a class="to-cart-link" href="#">
+              корзина
+              <i class="fa  fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Delivery -->
+
+    <div class="delivery-wrap">
+      <div class="container">
+        <div class="delivery">
+          <h2 class="head">Доставка</h2>
+          <div class="delivery-container">
+            <div class="delivery-form">
+              <div class="delivery-item delivery-city">
+                <div class="delivery-label">Введите город</div>
+                <div class="input">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="delivery-item delivery-method">
+                <div class="delivery-label">Способ доставки</div>
+                <div class="delivery-methods">
+                  <label data-target="delivery1">
+                    <div class="radio">
+                      <input type="radio" name="delivery-method" checked="checked">
+                      <span></span>
+                    </div>
+                    Курьерская доставка
+                  </label>
+                  <label data-target="delivery2">
+                    <div class="radio">
+                      <input type="radio" name="delivery-method">
+                      <span></span>
+                    </div>
+                    Почтой России
+                  </label>
+                  <label data-target="delivery3">
+                    <div class="radio">
+                      <input type="radio" name="delivery-method">
+                      <span></span>
+                    </div>
+                    Из пункта самовывоза
+                  </label>
+                </div>
+              </div>
+              <div class="delivery-item delivery-description">
+                <div class="delivery-el active" data-info="delivery1">
+                  <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
+                  <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после
+                    20:00, поступают в доставку на следующий день.</p>
+                </div>
+                <div class="delivery-el" data-info="delivery2">
+                  <p>Курьерская доставка осуществляется в рабочие дни с понедельника по пятницу с 09:00 до 22:00. </p>
+                </div>
+                <div class="delivery-el" data-info="delivery3">
+                  <p>Курьер предварительно свяжется с вами для уточнения деталей доставки. Все заказы оформленные на сайте после
+                    20:00, поступают в доставку на следующий день.</p>
+                </div>
+              </div>
+            </div>
+            <div class="delivery-cheque">
+              <ul>
+                <li>
+                  <span class="name">Стоимость доставки </span>
+                  <span class="value">500₽</span>
+                </li>
+                <li>
+                  <span class="name">Бесплатно при заказе на сумму от</span>
+                  <span class="value">2500₽</span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="name">Срок доставки</span>
+                  <span class="value">7-8 дней</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Location modal -->
+    <!-- Footer -->
 
-  <div id="location-modal" class="modal">
-    <div class="location-container">
-      <form action="" class="location-modal">
-        <div class="head">Выберите свой город</div>
-        <div class="location-cities">
-          <ul>
-            <li> 
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city" checked="checked">
-                  <span></span>
-                </div>
-                <span class="city">Москва</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Волгоград</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Воронеж</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Екатеринбург</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Казань</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Краснодар</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Красноярск</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city"> Нижний Новгород</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Новосибирск</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Пермь</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Ростов-на-Дону</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Самара</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Санкт-Петербург</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Уфа</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <div class="radio">
-                  <input type="radio" name="loc-city">
-                  <span></span>
-                </div>
-                <span class="city">Челябинск</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="location-manually-text">Или укажите в поле свой</div>
-        <div class="location-manually">
-          <div class="input">
-            <input type="text" placeholder="Введите город">
+    <div class="footer-wrap">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-item">
+            <h3 class="footer-head">Меню</h3>
+            <ul class="footer-nav">
+              <li>
+                <a href="#">Коллекции</a>
+              </li>
+              <li>
+                <a href="#">Что такое Frogogo?</a>
+              </li>
+              <li>
+                <a href="#">Бренды</a>
+              </li>
+              <li>
+                <a href="#">Возврат денег</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+            </ul>
           </div>
-          <button class="btn">сохранить</button>
+          <div class="footer-item">
+            <h3 class="footer-head">Помощь</h3>
+            <ul class="footer-nav">
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Карьера</a>
+              </li>
+              <li>
+                <a href="#">Поставщики</a>
+              </li>
+              <li>
+                <a href="#">Партнерская программа</a>
+              </li>
+              <li>
+                <a href="#">Конфиденциальность</a>
+              </li>
+              <li>
+                <a href="#">Публичная оферта</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item footer-payment">
+            <h3 class="footer-head">Способы оплаты</h3>
+            <div class="footer-payment-methods">
+              <img src="images/logo-footer-mastercard.png" alt="">
+              <img src="images/logo-footer-visa.png" alt="">
+              <img src="images/logo-footer-alfabank.png" alt="">
+            </div>
+            <div class="footer-payment-text">
+              <p>Вы можете оплатить покупки наличными или банковской картой при получении заказа.</p>
+              <p>Либо оплатить заказ онлайн на сайте.</p>
+            </div>
+          </div>
+          <div class="footer-item footer-sub">
+            <h3 class="footer-head footer-head-black">Подпишитесь на нашу рассылку</h3>
+            <div class="footer-descr">
+              и получите
+              <span class="size">500</span>
+              <span class="units">рублей</span> на бонусный счет
+            </div>
+            <form action="" class="footer-sub-form">
+              <div class="input">
+                <input type="email" placeholder="Электронная почта" required>
+              </div>
+              <div class="input">
+                <input type="text" placeholder="Пароль">
+              </div>
+              <div class="footer-button">
+                <button type="submit" class="btn">Подписаться</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </form>
+      </div>
+      <div class="footer-line-wrap">
+        <div class="container">
+          <div class="footer-line">
+            <div class="copy">© frogogo 2017</div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook-official"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-vk"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <!-- Location modal -->
 
+    <div id="location-modal" class="modal">
+      <div class="location-container">
+        <form action="" class="location-modal">
+          <div class="head">Выберите свой город</div>
+          <div class="location-cities">
+            <ul>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city" checked="checked">
+                    <span></span>
+                  </div>
+                  <span class="city">Москва</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Волгоград</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Воронеж</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Екатеринбург</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Казань</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Краснодар</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Красноярск</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city"> Нижний Новгород</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Новосибирск</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Пермь</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Ростов-на-Дону</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Самара</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Санкт-Петербург</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Уфа</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <div class="radio">
+                    <input type="radio" name="loc-city">
+                    <span></span>
+                  </div>
+                  <span class="city">Челябинск</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="location-manually-text">Или укажите в поле свой</div>
+          <div class="location-manually">
+            <div class="input">
+              <input type="text" placeholder="Введите город">
+            </div>
+            <button class="btn">сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.plugin.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.countdown-ru.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/common.js"></script>
-  
-</body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.countdown-ru.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
+
+  </body>
 </html>
