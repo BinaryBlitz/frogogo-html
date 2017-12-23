@@ -54,7 +54,7 @@ $(document).ready(function() {
     ]
   });
 
-  $(".get-bonus-shares").slick({
+  $(".get-bonus-promotion").slick({
     prevArrow:
       '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
     nextArrow:
