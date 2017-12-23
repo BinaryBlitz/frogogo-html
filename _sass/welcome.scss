@@ -1,0 +1,83 @@
+
+//======= Welcome bonus
+
+.welcome-bonus {
+  width: 720px;
+  background: #fff;
+  padding: 3.75rem 5rem;
+  text-align: center;
+  margin: 6rem 0;
+  max-width: 100%;
+  &-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background: $bg;
+    min-height: 100vh;
+  }
+}
+
+.welcome {
+  &-head {
+    color: $dark-blue;
+    letter-spacing: 0.8px;
+    font-size: 1.88rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  &-caption {
+    font-size: 1.8rem;
+    letter-spacing: 0.9px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: $dark-blue;
+  }
+  &-prize-text {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+  &-prize-item {
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $blue;
+    padding: 1.5rem;
+    .text {
+      width: 48%;
+      text-align: right;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end;
+      span {
+        max-width: 11rem;
+        display: block;
+        line-height: 1.4;
+      }
+    }
+    .value {
+      width: 48%;
+      font-size: 3.44rem;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  &-balance {
+    margin: 1.5rem 0 2.5rem;
+    text-align: center;
+    color: #1e1e3c;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    .bold {
+      font-size: 1.5rem;
+    }
+  }
+  &-go {
+    width: 100%;
+  }
+}

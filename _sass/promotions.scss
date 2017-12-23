@@ -1,0 +1,86 @@
+//============ Shares
+
+.shares {
+  padding-bottom: 7.5rem;
+  &-wrap {
+    background: $bg;
+  }
+  &-head {
+    color: $dark-blue;
+  }
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &-item {
+    width: 31.33%;
+    margin-right: 3%;
+    text-align: center;
+    background-color: #e8f0f7;
+    padding-top: 3.13rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-type {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-size: 0.94rem;
+  }
+  &-brand {
+    height: 9.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: $dark-blue;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &-size {
+    width: 80%;
+    margin: 0 auto 1.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $dark-blue;
+    font-weight: bold;
+    font-size: 0.81rem;
+    color: $dark-blue;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &-until {
+    width: 80%;
+    margin: 0 auto;
+    background: $dark-blue;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding-top: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+  }
+  &-time {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 2.5;
+  }
+  &-img {
+    margin-top: -2.5rem;
+    img {
+      vertical-align: bottom;
+    }
+  }
+}

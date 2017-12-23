@@ -1,0 +1,138 @@
+//========= Footer
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  &-wrap {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 2.5rem;
+  }
+  &-head {
+    font-weight: 600;
+    font-size: 1rem;
+    color: $dark-blue;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &-black {
+      color: #000;
+    }
+  }
+}
+
+//======= Footer nav
+
+.footer-nav {
+  margin-top: 2.5rem;
+  min-width: 12.5rem;
+  li {
+    margin-bottom: 1.2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      color: #6b7381;
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+//========== Footer payment
+
+.footer-payment {
+  width: 12.5rem;
+  flex-shrink: 0;
+  &-methods {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: 2.1rem;
+    justify-content: space-between;
+  }
+  &-text {
+    p {
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+      font-size: 0.88rem;
+      color: $dark-blue;
+      line-height: 1.4;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  img {
+    height: 2rem;
+  }
+}
+
+//=== Footer subscribe
+
+.footer {
+  &-sub {
+    width: 25rem;
+    flex-shrink: 0;
+  }
+  &-descr {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+    font-weight: 600;
+    .size {
+      font-weight: bold;
+      color: $blue;
+    }
+    .units {
+      color: $blue;
+    }
+  }
+  &-button {
+    text-align: right;
+    margin-top: 0.3rem;
+  }
+}
+
+.input {
+  margin-bottom: 20px;
+  input {
+    width: 100%;
+    font-size: 0.81rem;
+    height: 2.5rem;
+    background: #fff;
+    border: solid 1px #c6cdd7;
+    font-family: inherit;
+    padding: 0 1rem;
+  }
+}
+
+//======== Footer line
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  &-wrap {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.copy {
+  color: #8a93a3;
+}
+
+.social {
+  ul {
+    display: flex;
+    li {
+      margin-left: 1.5rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        font-size: 1.1rem;
+        color: $dark-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+//============ Delivery
+
+.delivery {
+  position: relative;
+  z-index: 5;
+  .head {
+    color: #fff;
+  }
+  &-wrap {
+    padding-bottom: 7rem;
+    position: relative;
+    background: $bg;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      background: $dark-blue;
+      height: 17.5rem;
+    }
+  }
+  &-container {
+    background: #fff;
+    padding: 3.75rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+//====== Delivery form
+
+.delivery {
+  &-form {
+    width: 55%;
+  }
+  &-item {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #d8d8d8;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  &-label {
+    letter-spacing: 0.6px;
+    font-size: 1.25rem;
+    color: #9a9fa9;
+  }
+  &-city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .input {
+      margin-left: 3rem;
+      flex-grow: 10;
+      margin-bottom: 0;
+    }
+  }
+  &-method {
+    display: flex;
+    align-items: flex-start;
+  }
+  &-methods {
+    margin-left: 1.88rem;
+    label {
+      margin-bottom: 1.88rem;
+      display: flex;
+      cursor: pointer;
+      letter-spacing: 1px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-description {
+    p {
+      font-size: 0.75em;
+      color: #1e1e3c;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+  }
+  &-el {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+//======= Delivery cheque
+
+.delivery {
+  &-cheque {
+    width: 40%;
+    background: #f8f8f8;
+    padding: 0 1.88rem;
+    font-size: 1rem;
+    color: $dark-blue;
+    ul {
+      border-bottom: 1px solid #d8d8d8;
+      padding: 1.88rem 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+      li {
+        margin-bottom: 1.88rem;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        .value {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

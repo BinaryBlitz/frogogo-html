@@ -1,0 +1,122 @@
+//======= Brands
+
+.brands {
+  position: relative;
+  z-index: 5;
+  &-wrap {
+    position: relative;
+    background: $bg;
+    padding-bottom: 7rem;
+    &:before {
+      content: "";
+      display: block;
+      background: $dark-blue;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 17.5rem;
+    }
+  }
+  .head {
+    color: #fff;
+  }
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &-name {
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding-top: 1rem;
+    color: $dark-blue;
+    text-align: center;
+    line-height: 1.2;
+  }
+  &-img {
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img {
+      max-width: 60%;
+      max-height: 60%;
+      transition: 300ms;
+    }
+  }
+}
+
+//=========== Brand page
+
+.brand-page {
+  &-profile {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        margin: 0.5rem 0;
+        font-size: 0.95rem;
+        color: $dark-blue;
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        &:after {
+          content: "∙";
+          display: block;
+          margin: 0 0.7rem;
+        }
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &-img {
+    padding: 1rem 0;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 12rem;
+    }
+  }
+  &-descr {
+    max-width: 650px;
+    margin: 0 auto 3.75rem;
+    color: #6b7381;
+    font-size: 0.95rem;
+    line-height: 2;
+    text-align: center;
+  }
+  &-collections {
+    background: $bg;
+    .head {
+      color: $dark-blue;
+    }
+  }
+}

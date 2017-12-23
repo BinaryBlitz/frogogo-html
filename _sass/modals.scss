@@ -1,0 +1,113 @@
+// Modals
+
+.modal {
+  display: none;
+}
+
+//====== Location modal
+
+#location-modal {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.location {
+  &-container {
+    width: 860px;
+    margin: 0 auto;
+  }
+  &-modal {
+    .head {
+      height: auto;
+      padding: 7.5rem 0 3.75rem;
+      justify-content: flex-start;
+    }
+  }
+  &-cities {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #d8d8d8;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 33.33%;
+        margin-bottom: 2rem;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &.checked {
+        .city {
+          color: $blue;
+        }
+      }
+      .city {
+        color: #c6cdd7;
+        letter-spacing: 0.6px;
+        font-size: 1.25rem;
+        transition: 300ms;
+      }
+    }
+  }
+}
+
+.location-manually {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+  &-text {
+    padding: 3rem 0 2.5rem;
+    color: $dark-blue;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .input {
+    max-width: 420px;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+//========= Modal change password
+
+#modal-change-password {
+  width: 580px;
+  background: #fff;
+  padding: 0 7.5rem 3.7rem;
+  .fancybox-close-small {
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+.change-password {
+  text-align: center;
+  &-head {
+    height: 8.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-blue;
+    font-size: 1.81rem;
+    letter-spacing: 0.9px;
+    font-weight: 300;
+  }
+  &-notification {
+    color: #1e1e3c;
+    text-align: center;
+    padding: 2rem 0 3rem;
+    line-height: 1.4;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .btn {
+    width: 100%;
+  }
+}

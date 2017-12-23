@@ -1,0 +1,155 @@
+//========= Header
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.69rem;
+  &-wrap {
+    border-bottom: 1px solid $bg;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    height: 4.69rem;
+    padding-left: 0.8rem;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  color: $dark-blue;
+  margin-right: 3rem;
+  cursor: pointer;
+  i {
+    margin-right: 1rem;
+    color: $blue;
+    font-size: 1rem;
+  }
+}
+
+.burger-wrap {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 1rem;
+    color: $blue;
+    margin-right: 1rem;
+  }
+  input {
+    margin-top: 0.2rem;
+    width: 13.75rem;
+    color: $dark-blue;
+    letter-spacing: 2px;
+    border: none;
+    &::-webkit-input-placeholder {
+      color: $dark-blue;
+    }
+    &:-moz-placeholder {
+      color: $dark-blue;
+    }
+    &::-moz-placeholder {
+      color: $dark-blue;
+    }
+    &:-ms-input-placeholder {
+      color: $dark-blue;
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding-right: 0.9rem;
+  &-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $dark-blue;
+    letter-spacing: 2px;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &-separate {
+    margin: 0 0.5rem;
+  }
+  &-img {
+    margin-left: 1rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 2.5rem;
+  width: 7.88rem;
+  transform: translateX(-50%);
+}
+
+.balance {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #1e1e3c;
+  height: 4.69rem;
+  &.active {
+    i {
+      transform: rotate(180deg);
+    }
+  }
+  &-text {
+    cursor: pointer;
+  }
+  .size {
+    font-weight: 600;
+    color: $blue;
+    margin-right: 0.2rem;
+  }
+  i {
+    color: $blue;
+    margin: 0 1rem;
+    transition: 300ms;
+  }
+  &-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 210px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+    margin-top: 15px;
+    z-index: -1;
+    visibility: hidden;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: 300ms;
+    &.active {
+      margin-top: 1px;
+      opacity: 1;
+      visibility: visible;
+      z-index: 9999;
+    }
+    li {
+      margin-bottom: 1.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 1rem;
+        color: #8a93a3;
+        letter-spacing: 1px;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}

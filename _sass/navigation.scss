@@ -1,0 +1,71 @@
+//========= Navigation
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #d8d8d8;
+}
+
+.nav {
+  ul {
+    display: flex;
+    li {
+      margin-right: 1rem;
+      a {
+        line-height: 4;
+        padding: 0 1rem;
+        color: #323232;
+        font-size: 0.9rem;
+        position: relative;
+        letter-spacing: 1px;
+        &:hover {
+          color: $dark-blue;
+          &:after {
+            opacity: 1;
+          }
+        }
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          right: 0;
+          left: 0;
+          height: 3px;
+          background: $blue;
+          opacity: 0;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+}
+
+.to-cart {
+  padding-right: 0.8rem;
+  &-link {
+    color: $dark-blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $blue;
+    }
+  }
+  i {
+    margin-left: 0.7rem;
+    color: $blue;
+    font-size: 1rem;
+  }
+  &-amount {
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 0.8rem;
+    .num {
+      font-size: 1rem;
+    }
+  }
+}
