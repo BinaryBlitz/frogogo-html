@@ -1,3 +1,105 @@
+//========= My account
+
+.my-account {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  &-sidebar {
+    li {
+      margin-bottom: 2rem;
+      &.active {
+        a {
+          color: $dark-blue;
+        }
+      }
+      a {
+        color: #8a93a3;
+        font-size: 1.5rem;
+        letter-spacing: 0.6px;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+  &-content {
+    width: 63%;
+    padding-bottom: 4rem;
+  }
+}
+
+//========= Details
+
+.details {
+  &-item {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 2.5rem 0;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    .label {
+      color: #6b7381;
+      letter-spacing: 0.6px;
+      font-size: 1.25rem;
+      min-width: 11.8rem;
+    }
+  }
+  &-inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    .input {
+      width: 48%;
+      margin-bottom: 4%;
+    }
+  }
+  &-birthday {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    &-selects {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 10;
+    }
+    .select {
+      width: 30%;
+    }
+  }
+  &-sex {
+    display: flex;
+    label {
+      display: flex;
+      cursor: pointer;
+      margin-right: 5.5rem;
+    }
+  }
+  &-password {
+    display: flex;
+    align-items: center;
+    .btn {
+      width: 10.25rem;
+    }
+  }
+  &-notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      letter-spacing: 1px;
+    }
+  }
+}
+
 //======== Signup header
 
 .signup-header {
