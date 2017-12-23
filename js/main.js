@@ -201,7 +201,7 @@ $(".cart-delivery-method label").click(function() {
 
 $(".delivery-methods label").click(function() {
   var target = '[data-info="' + $(this).attr("data-target") + '"]';
-  $(".delivery-el").hide();
+  $(".delivery-description-item").hide();
 
   $(target).show();
 });
